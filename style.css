@@ -1,0 +1,181 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url("images/pattern-background-desktop.svg"), hsl(225deg, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 450px;
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  outline: #f9ffff solid 1px;
+  outline-offset: -1px;
+  box-shadow: 0 3rem 3rem 0.75rem rgba(114, 128, 167, 0.1);
+}
+.card * {
+  width: 100%;
+}
+
+.card-image {
+  border-radius: 1rem 1rem 0 0;
+  outline: #2328a0 solid 1px;
+  outline-offset: -1px;
+  z-index: 1;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 6.5% 3rem 6.5%;
+}
+.card-body > * {
+  min-width: 280px;
+  max-width: 354px;
+}
+
+.card-info {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.info-header {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+
+.info-description {
+  margin: 0;
+  font-size: 1rem;
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.5rem;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.music-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-left: 1.25rem;
+  margin-right: 1rem;
+}
+
+.plan-header,
+.plan-price {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.plan-header {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-price {
+  color: hsl(224deg, 23%, 55%);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  white-space: nowrap;
+}
+
+.plan-change-btn {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.plan-change-btn:hover {
+  color: #766cea;
+  text-decoration: none;
+}
+
+.payment-btn {
+  background: hsl(245deg, 75%, 52%);
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 3.125rem;
+  margin-bottom: 6.5%;
+  cursor: pointer;
+  box-shadow: 0 10px 50px rgba(56, 41, 224, 0.4);
+}
+.payment-btn:hover {
+  background: #766cea;
+}
+
+.cancel-btn {
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+  text-decoration: none;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  white-space: nowrap;
+}
+.cancel-btn:hover {
+  color: #1d222f;
+}/*# sourceMappingURL=style.css.map */

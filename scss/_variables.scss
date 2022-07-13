@@ -1,0 +1,19 @@
+// Primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+$bright-blue-hover: lighten($bright-blue, 15%);
+
+// Neutral
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+$desaturated-blue-hover: darken($desaturated-blue, 40%);
+
+// Font
+$fonts: "Red Hat Display", sans-serif;
+$font-size-p: 1rem;
+
+// Other
+$card-border-radius: 1rem;

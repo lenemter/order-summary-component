@@ -1,0 +1,191 @@
+@import "variables";
+@import "mixins";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: $fonts;
+}
+
+body {
+    background: url("images/pattern-background-desktop.svg"), $pale-blue;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    $padding: 1.5rem;
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+.container {
+    height: 100vh;
+    @include flex-center();
+}
+
+@mixin width {
+    min-width: 280px;
+    max-width: 354px;
+}
+
+.card {
+    @include flex-center();
+    flex-direction: column;
+
+    min-width: 320px;
+    max-width: 450px;
+    text-align: center;
+
+    background: white;
+    @include border-radius($card-border-radius);
+    outline: #f9ffff solid 1px;
+    outline-offset: -1px;
+
+    box-shadow: 0 3rem 3rem 0.75rem adjust-color($color: $desaturated-blue, $alpha: -0.9);
+
+    * {
+        width: 100%; // Max width for children
+    }
+}
+
+.card-image {
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    outline: #2328a0 solid 1px;
+    outline-offset: -1px;
+    z-index: 1;
+}
+
+.card-body {
+    @include flex-center();
+    flex-direction: column;
+
+    $padding: 3rem;
+    padding: $padding 6.5% $padding 6.5%;
+
+    & > * {
+        @include width();
+    }
+}
+
+.card-info {
+    $padding: 0.75rem; // 12px
+    padding-left: $padding;
+    padding-right: $padding;
+
+    // letter-spacing: 0.025rem; // 0.4px
+}
+
+.info-header {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    font-size: 1.75rem;
+    color: $dark-blue;
+    font-weight: 900;
+}
+
+.info-description {
+    margin: 0;
+
+    font-size: $font-size-p;
+    color: $desaturated-blue;
+    line-height: 1.5rem;
+}
+
+.plan {
+    @include flex-center();
+    flex-direction: row;
+
+    background: $very-pale-blue;
+    @include border-radius(0.75rem);
+
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.music-icon {
+    $size: 3rem;
+    width: $size;
+    height: $size;
+}
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    margin-left: 1.25rem;
+    margin-right: 1rem;
+}
+
+.plan-header,
+.plan-price {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.plan-header {
+    color: $dark-blue;
+    font-weight: 900;
+}
+
+.plan-price {
+    color: $desaturated-blue;
+
+    max-width: min-content;
+    min-width: min-content;
+    white-space: nowrap;
+}
+
+.plan-change-btn {
+    width: min-content;
+
+    color: $bright-blue;
+    font-weight: 900;
+    font-size: 0.9rem;
+
+    &:hover {
+        color: $bright-blue-hover;
+        text-decoration: none;
+    }
+}
+
+.payment-btn {
+    background: $bright-blue;
+
+    @include border-radius(0.75rem);
+    border: none;
+
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+
+    height: 3.125rem; // 50px
+    margin-bottom: 6.5%;
+
+    cursor: pointer;
+    box-shadow: 0 10px 50px adjust-color($color: $bright-blue, $alpha: -0.6);
+
+    &:hover {
+        background: $bright-blue-hover;
+    }
+}
+
+.cancel-btn {
+    color: $desaturated-blue;
+    font-weight: 900;
+    text-decoration: none;
+    max-width: min-content;
+    min-width: min-content;
+    white-space: nowrap;
+
+    &:hover {
+        color: $desaturated-blue-hover;
+    }
+}
