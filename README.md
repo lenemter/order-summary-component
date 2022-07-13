@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/order-summary-component-CWhMltnrGt)
 - Live Site URL: [Live Site](https://lenemter.github.io/order-summary-component/)
 
 ## Author
