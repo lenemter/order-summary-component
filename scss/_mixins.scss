@@ -9,3 +9,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin transition($property, $duration) {
+    -moz-transition: $property $duration ease-out;
+    -webkit-transition: $property $duration ease-out;
+    -o-transition: $property $duration ease-out;
+    transition: $property $duration ease-out;
+}

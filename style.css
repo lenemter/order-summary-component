@@ -140,6 +140,7 @@ body {
   color: hsl(245deg, 75%, 52%);
   font-weight: 900;
   font-size: 0.9rem;
+  transition: color 0.15s ease-out;
 }
 .plan-change-btn:hover {
   color: #766cea;
@@ -159,6 +160,7 @@ body {
   margin-bottom: 6.5%;
   cursor: pointer;
   box-shadow: 0 10px 50px rgba(56, 41, 224, 0.4);
+  transition: background 0.15s ease-out;
 }
 .payment-btn:hover {
   background: #766cea;
@@ -175,6 +177,7 @@ body {
   min-width: -moz-min-content;
   min-width: min-content;
   white-space: nowrap;
+  transition: color 0.15s ease-out;
 }
 .cancel-btn:hover {
   color: #1d222f;

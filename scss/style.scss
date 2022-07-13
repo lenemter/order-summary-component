@@ -45,7 +45,8 @@ body {
     outline: #f9ffff solid 1px;
     outline-offset: -1px;
 
-    box-shadow: 0 3rem 3rem 0.75rem adjust-color($color: $desaturated-blue, $alpha: -0.9);
+    box-shadow: 0 3rem 3rem 0.75rem
+        adjust-color($color: $desaturated-blue, $alpha: -0.9);
 
     * {
         width: 100%; // Max width for children
@@ -150,6 +151,7 @@ body {
     font-weight: 900;
     font-size: 0.9rem;
 
+    @include transition(color, $transition-time);
     &:hover {
         color: $bright-blue-hover;
         text-decoration: none;
@@ -172,6 +174,7 @@ body {
     cursor: pointer;
     box-shadow: 0 10px 50px adjust-color($color: $bright-blue, $alpha: -0.6);
 
+    @include transition(background, $transition-time);
     &:hover {
         background: $bright-blue-hover;
     }
@@ -185,6 +188,7 @@ body {
     min-width: min-content;
     white-space: nowrap;
 
+    @include transition(color, $transition-time);
     &:hover {
         color: $desaturated-blue-hover;
     }
