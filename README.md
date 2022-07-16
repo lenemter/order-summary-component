@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshots
 
-![Screenshot](./screenshot.png)
-![Screenshot Hover](./screenshot_hover.png)
+![Screenshot](./screenshots/screenshot.png)
+![Screenshot Hover](./screenshots/screenshot_hover.png)
 
 ### Links
 
