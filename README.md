@@ -8,7 +8,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
     - [Links](#links)
   - [Author](#author)
 
@@ -20,7 +20,7 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-### Screenshot
+### Screenshots
 
 ![Screenshot](./screenshot.png)
 ![Screenshot Hover](./screenshot_hover.png)
