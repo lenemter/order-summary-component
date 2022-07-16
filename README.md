@@ -23,6 +23,7 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot](./screenshot.png)
+![Screenshot Hover](./screenshot_hover.png)
 
 ### Links
 
@@ -31,5 +32,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [My Github](https://github.com/lenemter)
+- My Github - [lenemter](https://github.com/lenemter)
 - Frontend Mentor - [@lenemter](https://www.frontendmentor.io/profile/lenemter)
